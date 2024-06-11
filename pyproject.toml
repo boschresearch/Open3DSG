@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open3dsg"
+description = "Open3DSG: Open-Vocabulary 3D Scene Graphs from Point Clouds with Queryable Objects and Open-Set Relationships"
+authors = [
+    { name = "Sebastian Koch" },
+    { name = "Narunas Vaskevicius" },
+    { name = "Mirco Colosi" },
+    { name = "Pedro Hermosilla" },
+    { name = "Timo Ropinski" },
+]
+readme = "README.md"
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["open3dsg"]
+
+[tool.setuptools.dynamic]
+version = { attr = "open3dsg.__version__" }

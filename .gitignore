@@ -1,0 +1,13 @@
+checkpoints
+__pycache__
+**/__pycache__
+**/*.so
+**/*.outputs
+++/*.egg
+.vscode
+graph*
+vis_graphs
+classwise_eval
+*.egg-info
+assets
+experiments
