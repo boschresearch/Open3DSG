@@ -238,8 +238,8 @@ def read_pointcloud_scannet(scan_id):
 def read_scan_info_scannet(scan_id, mode='depth'):
     scan_path = os.path.join(CONF.PATH.SCANNET_RAW2D, scan_id)
     # sequence_path = os.path.join(scan_path, "color")
-    intrinsic_path = os.path.join(scan_path, "_info.txt")
-    intrinsic_info = read_intrinsic(intrinsic_path, mode=mode)
+    # intrinsic_path = os.path.join(scan_path, "_info.txt")
+    intrinsic_info = dict() # read_intrinsic(intrinsic_path, mode=mode)
 
     image_list, color_list, extrinsic_list = [], [], []
     imgs = [img for img in sorted(os.listdir(os.path.join(scan_path, 'depth')), key=lambda x: int(os.path.splitext(x)[0]))]
